@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
         static int lives;
 
         static PictureBox[] lives_image;
-
+       
         static void start_game(RichTextBox wordArea)
 
         {
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
 
             {
 
-                if (word[i] == ' ')
+                if (word[i]==' ')
                 {
                     result_string += " ";
                 }
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
                 {
                     result_string += "@";
                 }
-
+                    
 
             }
 
@@ -133,16 +133,15 @@ namespace WindowsFormsApp1
 
                 else
                 {
-                    using (SuccessForm Success_Form = new SuccessForm())
+                    using (SuccessForm Success_Form = new SuccessForm()) 
 
                     {
 
                         Success_Form.ShowDialog();
 
                     }
-                    startButton.ReformClick();
                 }
-
+                    
 
             }
 
@@ -153,7 +152,7 @@ namespace WindowsFormsApp1
                 lives--;
                 lives_image[lives].Visible = false;
 
-                if (lives > 0)
+                if(lives > 0)
                 {
                     return;
                 }
@@ -164,7 +163,6 @@ namespace WindowsFormsApp1
                     {
                         los_Form.ShowDialog();
                     }
-                    startButton.ReformClick();
                 }
             }
 
@@ -178,7 +176,7 @@ namespace WindowsFormsApp1
 
             lives_image = new PictureBox[] { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6 };
 
-            words = new string[] { "лёд", "праздник", "новый год", "лось", "карнавал", "ёлочка", "праздник", "дед мороз", "олень", "сюрприз", "зима", "снегурочка", "ёхансон", "снег", "сугроб" };
+            words = new string[] {"лёд", "праздник", "новый год", "лось", "карнавал", "ёлочка", "праздник", "дед мороз", "олень", "сюрприз", "зима", "снегурочка", "ёхансон", "снег", "сугроб" };
 
             current_word = "";
 
@@ -202,7 +200,7 @@ namespace WindowsFormsApp1
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            button_symbol_click(RichTextBox1, 'б', button4, button34);
+            button_symbol_click(RichTextBox1,'б',button4, button34);
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -252,12 +250,12 @@ namespace WindowsFormsApp1
 
         private void Button12_Click(object sender, EventArgs e)
         {
-            button_symbol_click(RichTextBox1, 'к', button12, button34);
+            button_symbol_click(RichTextBox1,'к', button12, button34);
         }
 
         private void Button13_Click(object sender, EventArgs e)
         {
-            button_symbol_click(RichTextBox1, 'л', button13, button34);
+            button_symbol_click(RichTextBox1,'л', button13, button34);
         }
 
         private void Button14_Click(object sender, EventArgs e)
@@ -267,7 +265,7 @@ namespace WindowsFormsApp1
 
         private void Button15_Click(object sender, EventArgs e)
         {
-            button_symbol_click(RichTextBox1, 'н', button15, button34);
+            button_symbol_click(RichTextBox1,'н', button15, button34);
         }
 
         private void Button16_Click(object sender, EventArgs e)
@@ -322,7 +320,7 @@ namespace WindowsFormsApp1
 
         private void Button26_Click(object sender, EventArgs e)
         {
-            button_symbol_click(RichTextBox1, 'щ', button26, button34);
+            button_symbol_click(RichTextBox1,'щ', button26, button34);
         }
 
         private void Button27_Click(object sender, EventArgs e)

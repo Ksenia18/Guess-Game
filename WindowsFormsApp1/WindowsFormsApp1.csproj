@@ -46,42 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C:\Users\Пользователь\Desktop\GameForm.cs" />
+    <Compile Include="C:\Users\Пользователь\Desktop\GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="C:\Users\Администратор\Desktop\Game.cs">
-      <Link>Game.cs</Link>
+    <Compile Include="C:\Users\Пользователь\Desktop\Losform.cs">
+      <Link>Losform.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\Администратор\Desktop\Game.Designer.cs">
-      <DependentUpon>Game.cs</DependentUpon>
-      <Link>Game.Designer.cs</Link>
-    </Compile>
-    <Compile Include="Losform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Losform.Designer.cs">
+    <Compile Include="C:\Users\Пользователь\Desktop\Losform.Designer.cs">
       <DependentUpon>Losform.cs</DependentUpon>
+      <Link>Losform.Designer.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SuccessForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="C:\Users\Пользователь\Desktop\SuccessForm.cs">
+      <Link>SuccessForm.cs</Link>
     </Compile>
-    <Compile Include="SuccessForm.Designer.cs">
+    <Compile Include="C:\Users\Пользователь\Desktop\SuccessForm.Designer.cs">
       <DependentUpon>SuccessForm.cs</DependentUpon>
+      <Link>SuccessForm.Designer.cs</Link>
     </Compile>
+    <EmbeddedResource Include="C:\Users\Пользователь\Desktop\GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="C:\Users\Администратор\Desktop\Game.resx">
-      <DependentUpon>Game.cs</DependentUpon>
-      <Link>Game.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Losform.resx">
+    <EmbeddedResource Include="C:\Users\Пользователь\Desktop\Losform.resx">
       <DependentUpon>Losform.cs</DependentUpon>
+      <Link>Losform.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +91,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="C:\Users\Пользователь\Desktop\SuccessForm.resx">
+      <DependentUpon>SuccessForm.cs</DependentUpon>
+      <Link>SuccessForm.resx</Link>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
